@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank log in page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-6xl font-bold text-center my-12 ">Let's gets some <span class="text-green-400">Money!!!</span></h1>
+
+    <div class="w-9/12 mx-auto grid grid-cols-3 gap-6">
+        <div class="card-1 bg-blue-500 text-gray-100 rounded-lg p-6">
+            <h4 class="text-3xl font-bold">Diposit</h4>
+            <h2 class="text-7xl">৳<span id="diposit-ammount" class="text-6xl">10</span></h2>
+
+        </div>
+        <div class="card-2 bg-green-700 text-gray-100 rounded-lg p-6">
+            <h4 class="text-3xl font-bold">Withdraw</h4>
+            <h2 class="text-7xl">৳<span id="withdraw-ammount" class="text-6xl">00</span></h2>
+        </div>
+        <div class="card-3 bg-pink-600 text-gray-100 rounded-lg p-6">
+            <h4 class="text-3xl font-bold">Balance</h4>
+            <h2 class="text-7xl">৳<span id="total-balance" class="text-6xl">10</span></h2>
+        </div>
+    </div>
+
+
+    <div class="w-9/12 mx-auto mt-10 grid grid-cols-2 gap-5">
+        <div class="card-1 bg-purple-500 rounded-lg p-6">
+            <h4 class="text-xl font-bold text-gray-100 text-gray-100">Please Diposit</h4>
+            <div class="w-9/12 mx-auto">
+                <input id="diposit-fild" class=" p-1 rounded mt-2 block w-full"
+                    placeholder=" ৳ amount your want to diposit" type="text">
+                <button id="diposit-button"
+                    class="text-xl px-5 py-1 mt-2 rounded hover:bg-blue-500 text-gray-100 text-gray-100 bg-pink-600  font-bold">Submit</button>
+            </div>
+
+        </div>
+        <div class="card-2 bg-cyan-600 rounded-lg p-6">
+            <h4 class="text-xl font-bold text-gray-100 text-gray-100">Please Withdraw</h4>
+            <div class="w-9/12 mx-auto">
+                <input id="withdraw-fild" class=" p-1 rounded mt-2 block w-full"
+                    placeholder=" ৳ amount your want to Withdraw" type="text">
+                <button id="withdraw-button"
+                    class="text-xl px-5 py-1 mt-2 rounded hover:bg-green-700 text-gray-100 text-gray-100 bg-pink-600  font-bold">Submit</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
